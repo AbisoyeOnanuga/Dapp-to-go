@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700&display=swap');
+
+:root {
+
+    /*colour*/
+--united-nations-purple: hsl(284, 56%, 58%);
+--bright-navy-purple: hsl(290, 57%, 51%);
+--spanish-gray: hsl(0, 0%, 60%);
+--black-coral: hsl(225, 8%, 42%);
+--oxford-purple: hsl(280, 97%, 12%);
+--yale-purple: hsl(286, 72%, 33%);
+--purple-ncs: hsl(298, 100%, 36%);
+--gunmetal: hsl(206, 34%, 20%);
+--gainsboro: hsl(0, 0%, 88%);
+--cultured: hsl(0, 0%, 98%);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--onyx: hsl(0, 0%, 25%);
+--jet: hsl(0, 0%, 20%);
+
+/*typography*/
+--ff-poppins: "Poppins", sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+
+--fs-1: calc(20px + 3.5vw);
+--fs-2: calc(18px + 1.6vw);
+--fs-3: calc(16px + 0.45vw);
+--fs-4: 15px;
+--fs-5: 14px;
+--fs-6: 13px;
+--fs-7: 12px;
+--fs-8: 11px;
+
+--fw-500: 300;
+--fw-600: 400;
+--fw-700: 500;
+--fw-800: 700;
+
+/*transition*/
+--transition: 0.25s ease-in-out;
+
+/*border*/
+--radius-15: 8px;
+--radius-25: 21px;
+
+/*spacing*/
+--section-padding: 60px;
+
+}
+
+/*reset*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {list-style: none; }
+
+a {text-decoration:none; }
+
+a,
+img,
+span,
+input,
+label,
+button,
+ion-icon { display: block; }
+
+input,
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+button {cursor: pointer; }
+
+input { width: 100%; }
+
+ion-icon { pointer-events: none; }
+
+html {
+    font-family: var('Red Hat Display');
+    scroll-behavior: smooth;
+}
+
+body { background: var(--white); }
+
+/*reused*/
