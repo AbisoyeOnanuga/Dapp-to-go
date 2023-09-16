@@ -317,3 +317,174 @@ body { background: var(--white); height: 200vh; }
     text-align: right;
     position: relative;
 }
+
+/* flight search*/
+
+#flight-search-widget {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid var(--spanish-gray);
+    box-shadow: hsla(0%, 0%, 0%, 0.1);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    box-sizing: content-box;
+    position: relative;
+    margin-top: -100px;
+    background-color: var(--white);
+}
+
+#flight-search-widget h1 {
+    text-align: center;
+    color: var(--onyx);
+}
+  
+#flight-search-widget form {
+    display: flex;
+    flex-direction: column;
+}
+  
+#flight-search-widget form div {
+    margin: 10px;
+}
+  
+#trip-type {
+    display: flex;
+    justify-content: space-between;
+}
+  
+#trip-type input {
+    display: none;
+}
+  
+#trip-type label {
+    display: block;
+    width: calc(100% / 3 - 20px);
+    padding: 10px;
+    border: 1px solid var(--onyx);
+    border-radius: 5px;
+    text-align: center;
+}
+  
+#trip-type input:checked + label {
+    background-color: var(--bright-navy-purple);
+    color: var(--white);
+    border: none;
+}
+
+#trip-type label:is(:hover, :focus) {
+    background-color: var(--yale-purple);
+    color: var(--white);
+    border: none;
+}
+
+#trip-type input:checked + label:is(:hover, :focus) {
+    background-color: var(--yale-purple);
+    color: var(--white);
+}
+
+#origin-destination {
+    display: flex;
+}
+  
+#origin, #destination {
+    width: calc(50% - 10px);
+}
+  
+#origin label, #destination label {
+    display: block;
+}
+  
+#origin input, #destination input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: var(--border-width, 2px) solid var(--onyx);
+    border-radius: 8px; 
+}
+  
+#dates {
+    display: flex;
+}
+  
+#outbound-date, #return-date {
+    width: calc(50% - 10px);
+}
+  
+#outbound-date label, #return-date label {
+   display: block; 
+}
+  
+#outbound-date input, #return-date input {
+   display: block; 
+   width: 100%; 
+   padding: 10px; 
+   border: var(--border-width, 2px) solid var(--onyx);
+   border-radius: 8px; 
+}
+  
+#flight-class {
+   display: flex; 
+   align-items: center; 
+}
+  
+#flight-class label {
+   margin-right: 10px; 
+}
+  
+#flight-class select {
+   width: 200px; 
+   padding: 10px; 
+   border: none;
+   border-radius: 21px; 
+}
+  
+#passengers {
+   display: flex; 
+}
+  
+#adults, #children {
+   width: calc(50% - 10px); 
+}
+  
+#adults label, #children label {
+   display: block; 
+}
+  
+#adults-input, #children-input {
+   display: block; 
+   width: 30%; 
+   padding: 10px;
+   border: var(--border-width, 2px) solid var(--onyx);
+   border-radius: 8px; 
+}
+  
+#direct-flights {
+   align-items: left;
+}
+  
+#direct-flights input {
+   align-items: left;
+   justify-items: left;
+   position: relative;
+}
+  
+#search-button {
+   display: flex; 
+   justify-content: center; 
+}
+  
+#search-button button {
+   width: 200px; 
+   padding: 10px; 
+   border-radius: 21px;
+   background: var(--bright-navy-purple);
+   color: white; 
+}
+
+#search-button button:is(:hover, :focus) {
+    background: var(--yale-purple);
+ }
+  

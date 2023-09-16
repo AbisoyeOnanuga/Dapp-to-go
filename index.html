@@ -149,7 +149,67 @@
           </div>
         </section>
       </article>
-      
+
+      <div id="flight-search-widget">
+        <h1>Book a flight</h1>
+        <form id="flight-search-form">
+          <div id="trip-type">
+            <input type="radio" id="round-trip" name="trip-type" value="round-trip" checked>
+            <label for="round-trip">Round Trip</label>
+            <input type="radio" id="one-way" name="trip-type" value="one-way">
+            <label for="one-way">One Way</label>
+            <input type="radio" id="multi-city" name="trip-type" value="multi-city">
+            <label for="multi-city">Multi-City</label>
+          </div>
+          <div id=direct-flights>
+            <input type="checkbox" id="direct-flights-input" name="direct-flights-input">
+            <label for="direct-flights-input">Direct flights only</label>
+          </div>
+          <div id="flight-class">
+            <label for="flight-class-select">Flight Class</label>
+            <select id="flight-class-select" name="flight-class-select">
+              <option value="economy">Economy</option> 
+              <option value="business">Business</option> 
+              <option value="first-class">First Class</option> 
+            </select>
+          </div>
+          <div id="origin-destination">
+            <div id="origin">
+              <label for="origin-input">From</label>
+              <input type="text" id="origin-input" name="origin-input" placeholder="City or airport">
+            </div>
+            <div id="destination">
+              <label for="destination-input">To</label>
+              <input type="text" id="destination-input" name="destination-input" placeholder="City or airport">
+            </div>
+          
+        
+            <div id="outbound-date">
+              <label for="outbound-date-input">Depart</label>
+              <input type="date" id="outbound-date-input" name="outbound-date-input">
+            </div>
+            <div id="return-date">
+              <label for="return-date-input">Return</label>
+              <input type="date" id="return-date-input" name="return-date-input">
+            </div>
+          </div>
+          <div id="passengers">
+            <div id="adults">
+              <label for="adults-input">Adults</label>
+              <input type="number" id="adults-input" name="adults-input" min="1" max="9" value="1">
+            </div>
+            <div id="children">
+              <label for="children-input">Children</label>
+              <input type="number" id="children-input" name="children-input" min="0" max="9" value="0">
+            </div>
+          </div>
+          <div id="search-button">
+            <button type="submit" id="search-button-input" name="search-button-input">Search Flights</button>
+          </div>
+        </form>
+      </div>
+
+
     </main>
 
     <!-- custom javascript -->
