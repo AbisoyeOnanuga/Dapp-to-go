@@ -142,3 +142,5 @@ const cryptoPaymentButtons = document.querySelectorAll(
 cryptoPaymentButtons.forEach((button) => {
   button.addEventListener("click", handlePaymentClick);
 });
+
+.api spheron token {}eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlLZXkiOiJkM2MwMjE2NWNjMDMzZjQ1YmZmOGNmZWJiMDczYmRlNmNjMTc1NzM0YWUxNTQ2MTdjZTk0YjYxOWI0NWU5ZTFmNmYxOTE3NTEzMTVlNDE4YTFlZDYwOWMzNmU4Yzg0YTdlNjU4YTgwMjAxYTFlYjViZjJjZGZjNTdjYjBhYTEzYiIsImlhdCI6MTY5NDk3NTY1NCwiaXNzIjoid3d3LnNwaGVyb24ubmV0d29yayJ9.tNXSc-RdrjoVsCjPVThlop5_G9UvYzNRVPjW0xWn908
