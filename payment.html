@@ -150,72 +150,82 @@
           </section>
         </article>
 
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/air-canada-logo.png" alt="Air Canada">Air Canada, operated by Air Canada Express - Jazz </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$550.75 USD</span>
-          </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <a href="./index_fare.html">
-            <button class="view-details">View details</button>
-          </a>
+        <!-- Create a div element that will contain the payment page -->
+        <div class="payment-page">
+            <!-- Create a h1 element that will display the title of the page -->
+            <h1>Payment</h1>
+            <!-- Create a form element that will contain the input fields and buttons -->
+            <form>
+            <!-- Create a fieldset element that will group the input fields for the payment method -->
+            <fieldset>
+                <!-- Create a legend element that will display the title of the fieldset -->
+                <legend>Choose your payment method</legend>
+                <!-- Create four input elements that will allow the user to choose their payment method -->
+                <!-- Each input element has a type of radio, a name of payment-method, a unique id, and a value -->
+                <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                <!-- Create a label element that will display the label for the credit card input -->
+                <label for="credit-card">Credit card</label>
+                <input type="radio" id="debit-card" name="payment-method" value="debit-card">
+                <!-- Create a label element that will display the label for the debit card input -->
+                <label for="debit-card">Debit card</label>
+                <input type="radio" id="paypal" name="payment-method" value="paypal">
+                <!-- Create a label element that will display the label for the paypal input -->
+                <label for="paypal">PayPal</label>
+                <input type="radio" id="crypto-token" name="payment-method" value="crypto-token" checked>
+                <!-- Create a label element that will display the label for the crypto token input -->
+                <label for="crypto-token">Crypto token</label>
+            </fieldset>
+            <!-- Create a fieldset element that will group the input fields for the card details -->
+            <fieldset>
+                <!-- Create a legend element that will display the title of the fieldset -->
+                <legend>Enter your card details</legend>
+                <!-- Create a label element that will display the label for the card number input -->
+                <label for="card-number">Card number</label>
+                <!-- Create an input element that will allow the user to enter their card number -->
+                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+                <!-- Create a label element that will display the label for the card holder name input -->
+                <label for="card-holder-name">Card holder name</label>
+                <!-- Create an input element that will allow the user to enter their card holder name -->
+                <input type="text" id="card-holder-name" name="card-holder-name" placeholder="Enter your card holder name" required>
+                <!-- Create a div element that will contain two input fields for the expiry date and CVV code -->
+                <div class="card-info">
+                <!-- Create a label element that will display the label for the expiry date input -->
+                <label for="expiry-date">Expiry date</label>
+                <!-- Create an input element that will allow the user to enter their expiry date -->
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                <!-- Create a label element that will display the label for the CVV code input -->
+                <label for="cvv-code">CVV code</label>
+                <!-- Create an input element that will allow the user to enter their CVV code -->
+                <input type="text" id="cvv-code" name="cvv-code" placeholder="Enter your CVV code" required>
+                </div>
+            </fieldset>
+            <!-- Create a button element that will allow the user to confirm their payment -->
+            <button class="confirm-payment-button">Confirm payment</button>
+            </form>
         </div>
 
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/american-airlines-logo.png" alt="American Airlines">American Airlines, operated by Republic Airways As American Eagle </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$523.41 USD</span>
-          </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <button class="view-details">View details</button>
+        <!-- Create a div element that will contain the crypto payment card or button -->
+        <div class="crypto-payment-card-button">
+            <!-- Create a div element that will display the item information -->
+            <div class="item-info">
+            <!-- Create a span element that will display the item name -->
+            <span class="item-name">Flight fare</span>
+            <!-- Create a span element that will display the item price and currency -->
+            <span class="item-price">$550.75 USD</span>
+            </div>
+            <!-- Create a div element that will display the crypto payment options -->
+            <div class="crypto-payment-options">
+            <!-- Create a span element that will display the label for the crypto payment options -->
+            <span class="crypto-payment-label">Pay with crypto:</span>
+            <!-- Create four button elements that will allow the user to choose their preferred crypto currency -->
+            <!-- Each button element has a type of button, a name of crypto-currency, a unique id, and a value -->
+            <button type="button" id="bitcoin" name="crypto-currency" value="bitcoin">Bitcoin</button>
+            <button type="button" id="ethereum" name="crypto-currency" value="ethereum">Ethereum</button>
+            <button type="button" id="chainlink" name="crypto-currency" value="chainlink">Chainlink</button>
+            <button type="button" id="cardano" name="crypto-currency" value="cardano">Cardano</button>
+            </div>
         </div>
-
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/united-airlines-logo.png" alt="United Airlines">United Airlines, operated by Air Canada Express - Jazz </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$610.55 USD</span>
-          </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <button class="view-details">View details</button>
-        </div>
-
-
+  
 
       </main>
 

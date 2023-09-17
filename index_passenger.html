@@ -150,72 +150,87 @@
           </section>
         </article>
 
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/air-canada-logo.png" alt="Air Canada">Air Canada, operated by Air Canada Express - Jazz </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$550.75 USD</span>
-          </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <a href="./index_fare.html">
-            <button class="view-details">View details</button>
-          </a>
+        <!-- Create a div element that will contain the passenger details form page -->
+        <div class="passenger-details-form-page">
+          <!-- Create a h1 element that will display the title of the page -->
+          <h1>Passenger details</h1>
+          <!-- Create a form element that will contain the input fields and buttons -->
+          <form>
+            <!-- Create a fieldset element that will group the input fields for the contact information -->
+            <fieldset>
+              <!-- Create a legend element that will display the title of the fieldset -->
+              <legend>Who's flying?</legend>
+              <!-- Create a label element that will display the label for the email input -->
+              <label for="email">Email</label>
+              <!-- Create an input element that will allow the user to enter their email address -->
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+              <!-- Create a label element that will display the label for the phone input -->
+              <label for="phone">Phone</label>
+              <!-- Create an input element that will allow the user to enter their phone number -->
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </fieldset>
+            <!-- Create a fieldset element that will group the input fields for the traveler information -->
+            <fieldset>
+              <!-- Create a legend element that will display the title of the fieldset -->
+              <legend>Traveler 1 (Adult)</legend>
+              <!-- Create a label element that will display the label for the first name input -->
+              <label for="first-name">First name</label>
+              <!-- Create an input element that will allow the user to enter their first name -->
+              <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+              <!-- Create a label element that will display the label for the last name input -->
+              <label for="last-name">Last name</label>
+              <!-- Create an input element that will allow the user to enter their last name -->
+              <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+              <!-- Create a label element that will display the label for the gender select -->
+              <label for="gender">Gender</label>
+              <!-- Create a select element that will allow the user to choose their gender -->
+              <select id="gender" name="gender" required>
+                <!-- Create three option elements that will display the possible gender choices -->
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <!-- Create a label element that will display the label for the date of birth input -->
+              <label for="date-of-birth">Date of birth</label>
+              <!-- Create an input element that will allow the user to enter their date of birth -->
+              <input type="date" id="date-of-birth" name="date-of-birth" placeholder="Enter your date of birth" required>
+              <!-- Create a label element that will display the label for the country of residence select -->
+              <label for="country-of-residence">Country of residence</label>
+              <!-- Create a select element that will allow the user to choose their country of residence -->
+              <select id="country-of-residence" name="country-of-residence" required>
+                <!-- Create some option elements that will display some possible country choices (you can add more if you want) -->
+                <option value="">Select your country of residence</option>
+                <option value="canada">Canada</option>
+                <option value="usa">United States of America</option>
+                <option value="uk">United Kingdom</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+                <option value="australia">Australia</option>
+                <option value="brazil">Brazil</option>
+              </select>
+            </fieldset>
+            <!-- Create a div element that will display the total fare charges and breakdown -->
+            <div class="fare-charges">
+              <!-- Create a span element that will display the total fare charges -->
+              <span class="total-fare">Total fare charges: $551.75 USD</span>
+              <!-- Create a span element that will display a breakdown of the charges -->
+              <span class="fare-breakdown">
+                Base fare: $500.00 USD<br/>
+                Taxes, fees and charges: $51.75 USD
+              </span>
+            </div>
+            <!-- Create a button element that will allow the user to proceed to the next page -->
+            <a href="./payment.html">Next</a>
+            <a href="./payment.html"><button class="next-button">Next</button></a>
+          </form>
         </div>
 
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/american-airlines-logo.png" alt="American Airlines">American Airlines, operated by Republic Airways As American Eagle </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$523.41 USD</span>
-          </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <button class="view-details">View details</button>
-        </div>
 
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/united-airlines-logo.png" alt="United Airlines">United Airlines, operated by Air Canada Express - Jazz </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$610.55 USD</span>
-          </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <button class="view-details">View details</button>
-        </div>
-
-
+        
 
       </main>
 

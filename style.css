@@ -493,13 +493,15 @@ body { background: var(--white); height: 200vh; }
     width: 40%;
     height: fit-content;
     border-radius: 8px;
-    margin: 21px;
     padding: 21px;
     border: 1px solid var(--spanish-gray);
     background-color: var(--white);
     display: flex;
     position: relative;
-    margin: 21 auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 .flight-info {
@@ -559,4 +561,435 @@ body { background: var(--white); height: 200vh; }
     background-color: var(--yale-purple);
     color: #ffffff;
     cursor: pointer;
- }
+}
+
+
+/* Define some common styles for the fare options page */
+.view-details-page {
+    /* Set the width, height, margin, padding, border, and background color of the view details page */
+    width: 60%;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid var(--onyx);
+    background-color: #ffffff;
+    border-radius: 21px;
+}
+  
+/* Define some specific styles for each span element */
+.origin,
+.destination {
+/* Set the font-weight of the origin and destination span */
+font-weight: bold;
+}
+  
+.arrow {
+/* Set the font-size and color of the arrow span */
+font-size: 18px;
+color: var(--black-coral);
+}
+  
+.fare-options {
+    /* Set the display, flex-direction, justify-content, align-items, and gap of the fare options div */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px; 
+}
+  
+.fare-options h2 {
+    /* Set the font-family, font-size, font-weight, color, and margin of the h2 element */
+    font-weight: bold;
+    color: var(--black-coral);
+    margin: 0; 
+}
+  
+.fare-options table {
+    /* Set the width, border-collapse, and margin of the table element */
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0; 
+}
+  
+/* Define some common styles for the th and td elements */
+.fare-options th,
+.fare-options td {
+    padding: 5px;
+    border: 1px solid var(--onyx);
+    text-align: center;
+    vertical-align: middle; 
+}
+  
+/* Define some specific styles for each th and td element */
+.fare-options th:first-child,
+.fare-options td:first-child {
+    text-align: left;
+    width: 40%; 
+}
+  
+.fare-options th:nth-child(2),
+.fare-options td:nth-child(2) {
+    /* Set the background-color of the second th and td element in each row */
+    background-color: #f0f0f0; 
+}
+  
+.fare-options th:nth-child(3),
+.fare-options td:nth-child(3) {
+    /* Set the background-color of the third th and td element in each row */
+    background-color: #e0e0e0; 
+}
+  
+.fare-options th:nth-child(4),
+.fare-options td:nth-child(4) {
+    /* Set the background-color of the fourth th and td element in each row */
+    background-color: #d0d0d0; 
+}
+  
+/* Define some styles for the button elements */
+.back-button {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 21px;
+    background-color: var(--bright-navy-purple); 
+    color: var(--white);
+}
+
+.next-button {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 21px;
+    background-color: var(--bright-navy-purple); 
+    color: var(--white);
+}  
+
+.next-button:is(:hover, :focus) {
+    background-color: var(--yale-purple);
+}
+
+.back-button:is(:hover, :focus) {
+    background-color: var(--yale-purple);
+}
+
+
+/* Define some common styles for the passenger details form page */
+.passenger-details-form-page {
+/* Set the width, height, margin, padding, border, and background color of the passenger details form page */
+width: 600px;
+height: fit-content;
+padding: 10px;
+border: 1px solid var(--onyx);
+border-radius: 21px;
+background-color: var(--white);
+margin: auto;
+}
+  
+.passenger-details-form-page h1 {
+/* Set the font-family, font-size, font-weight, color, and margin of the h1 element */
+font-size: 24px;
+font-weight: bold;
+margin: 0;
+}
+  
+.passenger-details-form-page form {
+    /* Set the display, flex-direction, justify-content, align-items, and gap of the form element */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px; 
+}
+  
+.passenger-details-form-page fieldset {
+    /* Set the width, border, padding, and margin of the fieldset element */
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin: 0; 
+}
+  
+.passenger-details-form-page legend {
+    /* Set the font-family, font-size, font-weight, color, and margin of the legend element */
+    font-weight: bold;
+    margin: 0; 
+}
+  
+/* Define some common styles for the label and input elements */
+.passenger-details-form-page label,
+.passenger-details-form-page input,
+.passenger-details-form-page select {
+    /* Set the display, width, height, margin, padding, border, border-radius, font-family, font-size, font-weight, color, and outline of the label and input elements */
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid var(--onyx);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--black-coral);
+    outline: none; 
+}
+  
+/* Define some specific styles for each label and input element */
+.passenger-details-form-page label {
+    /* Set the text-align and width of the label element */
+    border: none;
+    text-align: left;
+    width: auto; 
+}
+  
+.passenger-details-form-page input[type="date"] {
+    /* Set the cursor of the date input element */
+    cursor: pointer; 
+}
+  
+.passenger-details-form-page select {
+    /* Set the cursor of the select element */
+    cursor: pointer; 
+}
+  
+.passenger-details-form-page .fare-charges {
+    /* Set the display and width of the fare charges div */
+    display: flex;
+    width: 100%; 
+}
+  
+.passenger-details-form-page .total-fare,
+.passenger-details-form-page .fare-breakdown {
+    /* Set the font-family, font-size, font-weight, color, and margin of the span elements */
+    font-weight: normal;
+    margin: 0; 
+}
+  
+.passenger-details-form-page .total-fare {
+    /* Set the width and text-align of the total fare span */
+    width: 50%;
+    text-align: left; 
+}
+  
+.passenger-details-form-page .fare-breakdown {
+    /* Set the width and text-align of the fare breakdown span */
+    width: 50%;
+    text-align: right; 
+}
+  
+/* Define some styles for the button element */
+.next-button {
+    /* Set the width, height, margin-top, padding, border, border-radius, background-color, font-family, font-size, font-weight, color, cursor, and outline of the button element */
+    width: 100px;
+    height: 30px;
+    margin-top:auto ;
+    border:none ;
+    border-radius: 24px ;
+    background-color :var(--bright-navy-purple) ;
+    font-size: 14px ;
+    font-weight: bold ;
+    color: var(--white) ;
+    cursor: pointer ;
+    outline: none ; 
+}
+
+
+/* Define some common styles for the payment page */
+.payment-page {
+    /* Set the width, height, margin, padding, border, and background color of the payment page */
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-left: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    padding: 21px;
+    border: 1px solid var(--onyx);
+    border-radius: 21px;
+    background-color: var(--white);
+  }
+  
+  .payment-page h1 {
+    /* Set the font-family, font-size, font-weight, color, and margin of the h1 element */
+    font-weight: bold;
+    color: var(--black-coral);
+    margin: 0;
+  }
+  
+  .payment-page form {
+     /* Set the display, flex-direction, justify-content, align-items, and gap of the form element */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-start;
+     gap: 10px;
+  }
+  
+  .payment-page fieldset {
+     /* Set the width, border, padding, and margin of the fieldset element */
+     width: 100%;
+     border: none;
+     padding: 10px;
+     margin: 0; 
+  }
+  
+  .payment-page legend {
+     /* Set the font-family, font-size, font-weight, color, and margin of the legend element */
+     font-weight: bold;
+     color: var(--black-coral);
+     margin: 0; 
+  }
+  
+  /* Define some common styles for the label and input elements */
+  .payment-page label,
+  .payment-page input {
+     /* Set the display, width, height, margin, padding, border, border-radius, font-family, font-size, font-weight, color, and outline of the label and input elements */
+     display: block;
+     width: 100%;
+     height: 30px;
+     margin: 5px 0;
+     padding: 5px;
+     border-radius: 5px;
+     font-weight: normal;
+     color: var(--black-coral);
+     outline: none; 
+  }
+  
+/* Define some specific styles for each label and input element */
+.payment-page label {
+    /* Set the text-align and width of the label element */
+    text-align: left;
+    width: auto;
+}
+  
+.payment-page input[type="radio"] {
+    /* Set the display, width, height, margin-right, and cursor of the radio input element */
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer; 
+}
+  
+.payment-page input[type="text"] {
+    /* Set the text-align of the text input element */
+    text-align: left; 
+    border: 1px solid var(--spanish-gray); 
+    width: 400px;
+}
+
+.payment-page .card-info {
+    /* Set the display and gap of the card info div */
+    display: flex;
+    gap: 10px; 
+}
+
+.payment-page .card-info input {
+    /* Set the width of the input elements in the card info div */
+    width: 50%;
+    border: 1px solid var(--spanish-gray); 
+}
+  
+
+
+/* Define some styles for the button element */
+.confirm-payment-button {
+    /* Set the width, height, margin-top, padding, border, border-radius, background-color, font-family, font-size, font-weight, color, cursor, and outline of the button element */
+width: 60%;
+height: 30px;
+margin-top: auto ;
+margin-left: auto ;
+margin-right: auto ;
+padding: 5px ;
+border: none ;
+border-radius: 21px ;
+background-color: var(--bright-navy-purple) ;
+font-weight: bold ;
+color: var(--white) ;
+cursor: pointer ;
+outline: none ; 
+}
+
+
+/* Define some common styles for the crypto payment card or button */
+.crypto-payment-card-button {
+    /* Set the width, height, margin, padding, border, border-radius, and background color of the crypto payment card or button */
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid var(--onyx);
+    border-radius: 10px;
+    background-color: var(--white);
+    position: relative;
+}
+  
+.item-info {
+    /* Set the display, flex-direction, justify-content, align-items, and gap of the item information div */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Define some common styles for the span elements */
+.item-info span,
+.crypto-payment-options span {
+    /* Set the font-family, font-size, font-weight, color, and margin of the span elements */
+    color: var(--black-coral);
+    margin: 10px; 
+}
+
+/* Define some specific styles for each span element */
+.item-name {
+    /* Set the text-align and width of the item name span */
+    text-align: left;
+    width: auto; 
+}
+
+.item-price {
+    /* Set the text-align and width of the item price span */
+    text-align: right;
+    font-weight: bold;
+}
+
+.crypto-payment-options {
+    /* Set the display and gap of the crypto payment options div */
+    display: flex;
+    gap: 10px; 
+}
+
+.crypto-payment-options span {
+    /* Set the width and text-align of the crypto payment label span */
+    width: auto;
+    text-align: left; 
+}
+
+/* Define some common styles for the button elements */
+.crypto-payment-options button {
+width: 90px;
+height: 30px;
+margin-top: auto ;
+padding: 5 px ;
+border-radius: 21px ;
+border: none;
+background-color: var(--bright-navy-purple) ;
+font-size: 14px ;
+color: var(--white) ;
+cursor: pointer ;
+outline: none ; 
+}
+
+.crypto-payment-options button:is(:hover, :focus) {
+border: none;
+background-color: var(--yale-purple);
+font-size: 14px ;
+color: var(--white) ;
+cursor: pointer ;
+outline: none ; 
+}
+  
+  

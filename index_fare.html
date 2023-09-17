@@ -150,72 +150,98 @@
           </section>
         </article>
 
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
+        <!-- Create a div element that will contain the view details page -->
+        <div class="view-details-page">
           <!-- Create a div element that will display the flight information -->
           <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/air-canada-logo.png" alt="Air Canada">Air Canada, operated by Air Canada Express - Jazz </span>
             <!-- Create a span element that will display the origin airport code and city name -->
             <span class="origin">YYZ Toronto → JFK New York</span>
             <!-- Create a span element that will display the departure date -->
             <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
+
             <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
+
             <span class="duration">1h 36m, Direct</span>
             <!-- Create a span element that will display the flight price -->
             <span class="price">$550.75 USD</span>
           </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <a href="./index_fare.html">
-            <button class="view-details">View details</button>
-          </a>
-        </div>
-
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/american-airlines-logo.png" alt="American Airlines">American Airlines, operated by Republic Airways As American Eagle </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$523.41 USD</span>
+          <!-- Create a div element that will display the fare options -->
+          <div class="fare-options">
+            <!-- Create a h2 element that will display the title of the fare options section -->
+            <h2>Fare options</h2>
+            <!-- Create a table element that will display the fare options in rows and columns -->
+            <table>
+              <!-- Create a tr element that will contain the table headers -->
+              <tr>
+                <!-- Create a th element that will display an empty cell for alignment purposes -->
+                <th></th>
+                <!-- Create three th elements that will display the names of the fare options -->
+                <th>Basic</th>
+                <th>Standard</th>
+                <th>Business lowest</th>
+              </tr>
+              <!-- Create a tr element that will contain the personal item information -->
+              <tr>
+                <!-- Create a td element that will display the label for personal item -->
+                <td>Personal item</td>
+                <!-- Create three td elements that will display check marks for each fare option -->
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <!-- Create a tr element that will contain the cabin bag information -->
+              <tr>
+                <!-- Create a td element that will display the label for cabin bag -->
+                <td>Cabin bag</td>
+                <!-- Create three td elements that will display check marks for each fare option -->
+                <td>✓</td>
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <!-- Create a tr element that will contain the flexibility information -->
+              <tr>
+                <!-- Create a td element that will display the label for flexibility -->
+                <td>Flexibility to change flights</td>
+                <!-- Create one td element that will display an empty cell for basic fare option -->
+                <td></td>
+                <!-- Create two td elements that will display check marks for standard and business lowest fare options -->
+                <td>✓</td>
+                <td>✓</td>
+              </tr>
+              <!-- Create a tr element that will contain the priority check-in information -->
+              <tr>
+                <!-- Create a td element that will display the label for priority check-in -->
+                <td>Priority check-in</td>
+                <!-- Create two td elements that will display empty cells for basic and standard fare options -->
+                <td></td>
+                <td></td>
+                <!-- Create one td element that will display a check mark for business lowest fare option -->
+                <td>✓</td>
+              </tr>
+              <!-- Create a tr element that will contain the airport lounge access information -->
+              <tr>
+                <!-- Create a td element that will display the label for airport lounge access -->
+                <td>Airport lounge access</td>
+                <!-- Create two td elements that will display empty cells for basic and standard fare options -->
+                <td></td>
+                <td></td>
+                <!-- Create one td element that will display a check mark for business lowest fare option -->
+                <td>✓</td>
+              </tr>
+              <!-- Create a tr element that will contain the price information -->
+              <tr>
+                <!-- Create a td element that will display the label for price -->
+                <td>Price (USD)</td>
+                <!-- Create three td elements that will display the prices for each fare option -->
+                <td>$151.78</td>
+                <td>$262.42</td>
+                <td>$824.46</td>
+              </tr>
+            </table>
           </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <button class="view-details">View details</button>
+          <a href="./index_flight.html"><button class="back-button">Back</button></a>
+          <a href="./index_passenger.html"><button class="next-button">Next</button></a>
         </div>
-
-        <!-- Create a div element that will contain the flight card -->
-        <div class="flight-card">
-          <!-- Create a div element that will display the flight information -->
-          <div class="flight-info">
-            <!-- Create a span element that will display the airline name and logo -->
-            <span class="airline"><img src="./images/united-airlines-logo.png" alt="United Airlines">United Airlines, operated by Air Canada Express - Jazz </span>
-            <!-- Create a span element that will display the origin airport code and city name -->
-            <span class="origin">YYZ Toronto → JFK New York</span>
-            <!-- Create a span element that will display the departure date -->
-            <span class="date">20 Sept</span>
-            <!-- Create a span element that will display the departure time and arrival time -->
-            <span class="time">11:00 - 12:36</span>
-            <!-- Create a span element that will display the flight duration and number of stops -->
-            <span class="duration">1h 36m, Direct</span>
-            <!-- Create a span element that will display the flight price -->
-            <span class="price">$610.55 USD</span>
-          </div>
-          <!-- Create a button element that will allow the user to view more details about the flight -->
-          <button class="view-details">View details</button>
-        </div>
-
-
 
       </main>
 
