@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@spheron/site": "^1.0.2",
-    "bunzz": "^0.1.2"
+    "bunzz": "^0.1.2",
+    "web3": "^4.1.1"
   }
 }
