@@ -401,7 +401,7 @@ body { background: var(--white); height: 200vh; }
     width: 100%;
     padding: 10px;
     border: none;
-    border: var(--border-width, 2px) solid var(--onyx);
+    border: var(--border-width, 2px) solid var(--spanish-gray);
     border-radius: 8px; 
 }
   
@@ -421,7 +421,7 @@ body { background: var(--white); height: 200vh; }
    display: block; 
    width: 100%; 
    padding: 10px; 
-   border: var(--border-width, 2px) solid var(--onyx);
+   border: var(--border-width, 2px) solid var(--spanish-gray);
    border-radius: 8px; 
 }
   
@@ -457,7 +457,7 @@ body { background: var(--white); height: 200vh; }
    display: block; 
    width: 30%; 
    padding: 10px;
-   border: var(--border-width, 2px) solid var(--onyx);
+   border: var(--border-width, 2px) solid var(--spanish-gray);
    border-radius: 8px; 
 }
   
@@ -486,5 +486,77 @@ body { background: var(--white); height: 200vh; }
 
 #search-button button:is(:hover, :focus) {
     background: var(--yale-purple);
- }
+}
   
+/* Define some common styles for the flight card */
+.flight-card {
+    width: 40%;
+    height: fit-content;
+    border-radius: 8px;
+    margin: 21px;
+    padding: 21px;
+    border: 1px solid var(--spanish-gray);
+    background-color: var(--white);
+    display: flex;
+    position: relative;
+    margin: 21 auto;
+}
+  
+.flight-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 21px;
+}
+  
+/* Define some common styles for the span elements */
+.flight-info span {
+    color: #333333;
+    margin: 0;
+}
+  
+/* Define some specific styles for each span element */
+.airline {
+    font-weight: 500;
+    display: flex;
+}
+
+/* Define some specific styles for each span element */
+.time {
+    font-weight: 600;
+    display: flex;
+}
+
+/* Define some specific styles for each span element */
+.price {
+    font-weight: 700;
+    font-size: var(--fs-3);
+    display: flex;
+}
+  
+.airline img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+  
+/* Define some styles for the button element */
+.view-details {
+    width: 200px;
+    height: 30px;
+    margin-top: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 21px;
+    background-color: var(--bright-navy-purple);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.view-details:is(:hover, :focus) {
+    background-color: var(--yale-purple);
+    color: #ffffff;
+    cursor: pointer;
+ }
