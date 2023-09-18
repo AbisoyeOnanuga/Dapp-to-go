@@ -6,6 +6,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Dapp-To-Go | travel and plan trips with web3</title>
 
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+      <script src="./contract.js"></script>
+
+
       <!-- custom css file link -->
       <link rel="stylesheet" href="style.css">
       <!-- favicon -->
@@ -18,224 +24,223 @@
   </head>
 
   <body>
-      <!-- header -->
-      <header class="header" data-header>
-        <div class="overlay" data-overlay></div>
-        <div class="header-top">
-          <div class="container">
+    <!-- header -->
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+      <div class="header-top">
+        <div class="container">
 
-            <a href="tel:+2341111111111" class="helpline-box">
-              <div class="icon-box">
-                <ion-icon name="call"></ion-icon>
-              </div>
-
-              <div class="wrapper">
-                <p class="helpline-title">For more assistance :</p>
-                <p class="helpline-number">+234 (111) 1111 111</p>
-              </div>
-                
-            </a>
-
-            <a href="#" class="logo">
-              <img src="./images/Dapptogo-logo_w.svg" alt="Dapptogo-logo_w" height="24">
-            </a>
-            <div class="header-btn-group">
-              <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-                <ion-icon name="menu"></ion-icon>
-              </button>
+          <a href="tel:+2341111111111" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call"></ion-icon>
             </div>
+
+            <div class="wrapper">
+              <p class="helpline-title">For more assistance :</p>
+              <p class="helpline-number">+234 (111) 1111 111</p>
+            </div>
+              
+          </a>
+
+          <a href="#" class="logo">
+            <img src="./images/Dapptogo-logo_w.svg" alt="Dapptogo-logo_w" height="24">
+          </a>
+          <div class="header-btn-group">
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+              <ion-icon name="menu"></ion-icon>
+            </button>
           </div>
         </div>
+      </div>
 
-        <div class="header-bottom">
-          <div class="container">
-            
-            <ul class="social-list">
+      <div class="header-bottom">
+        <div class="container">
+          
+          <ul class="social-list">
 
-              <li>
-                  <a href="#" class="social-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="social-link">
-                      <ion-icon name="logo-youtube"></ion-icon>
-                  </a>
-              </li>
-              <li>
-                  <a href="#" class="social-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+
+            <div class="navbar-top">
+
+                <a href="#" class="logo">
+                    <img src="./images/Dapptogo-logo.svg" alt="Dapp To Go logo" height="46">
+                </a>
+
+                <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                  <ion-icon name="close"></ion-icon>
+                </button>
+
+            </div>
+            <ul class="navbar-list">
+              <li class="navbar-list">
+                <a href="#fly" class="navbar-link" data-nav-link><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane-departure" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M14.639 10.258l4.83 -1.294a2 2 0 1 1 1.035 3.863l-14.489 3.883l-4.45 -5.02l2.897 -.776l2.45 1.414l2.897 -.776l-3.743 -6.244l2.898 -.777l5.675 5.727z" />
+                  <path d="M3 21h18" />
+                </svg> Book a flight</a>
+                
+                <a href="#hotel" class="navbar-link" data-nav-link><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hotel-service" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M8.5 10a1.5 1.5 0 0 1 -1.5 -1.5a5.5 5.5 0 0 1 11 0v10.5a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2c0 -1.38 .71 -2.444 1.88 -3.175l4.424 -2.765c1.055 -.66 1.696 -1.316 1.696 -2.56a2.5 2.5 0 1 0 -5 0a1.5 1.5 0 0 1 -1.5 1.5z" />
+                </svg> Book a hotel</a>
+
+                <a href="#fly-hotel" class="navbar-link" data-nav-link> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-luggage" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M6 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+                  <path d="M9 6v-1a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1" />
+                  <path d="M6 10h12" />
+                  <path d="M6 16h12" />
+                  <path d="M9 20v1" />
+                  <path d="M15 20v1" />
+                </svg> Flight & Hotel</a>
+
+                <a href="#places" class="navbar-link" data-nav-link>      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-arch" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M3 21l18 0" />
+                  <path d="M4 21v-15a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v15" />
+                  <path d="M9 21v-8a3 3 0 0 1 6 0v8" />
+                </svg> Go places</a>
+
+                <a href="#food" class="navbar-link" data-nav-link>      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
+                </svg>  Eat food</a>
               </li>
             </ul>
 
-            <nav class="navbar" data-navbar>
+          </nav>
+            
+        </div>
+      </div>
 
-              <div class="navbar-top">
+    </header>
 
-                  <a href="#" class="logo">
-                      <img src="./images/Dapptogo-logo.svg" alt="Dapp To Go logo" height="46">
-                  </a>
+    <main>
+      <article>
+        <!-- #hero -->
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">Plan your trips on web3</h2>
+            <p class="hero-text">
+              Travel        
+              Eat      
+              Sleep
+            </p>
+            <p class="hero-underline">
+              with Dapp To Go
+            </p>
+            </br></br>
+            <div class="btn-group">
+              <button class="btn btn-primary">Learn more</button>
+              <!-- <button class="btn btn-secondary">Book a trip</button> -->
+            </div>
 
-                  <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-                    <ion-icon name="close"></ion-icon>
-                  </button>
-
-              </div>
-              <ul class="navbar-list">
-                <li class="navbar-list">
-                  <a href="#fly" class="navbar-link" data-nav-link><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane-departure" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M14.639 10.258l4.83 -1.294a2 2 0 1 1 1.035 3.863l-14.489 3.883l-4.45 -5.02l2.897 -.776l2.45 1.414l2.897 -.776l-3.743 -6.244l2.898 -.777l5.675 5.727z" />
-                    <path d="M3 21h18" />
-                  </svg> Book a flight</a>
-                  
-                  <a href="#hotel" class="navbar-link" data-nav-link><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hotel-service" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M8.5 10a1.5 1.5 0 0 1 -1.5 -1.5a5.5 5.5 0 0 1 11 0v10.5a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2c0 -1.38 .71 -2.444 1.88 -3.175l4.424 -2.765c1.055 -.66 1.696 -1.316 1.696 -2.56a2.5 2.5 0 1 0 -5 0a1.5 1.5 0 0 1 -1.5 1.5z" />
-                  </svg> Book a hotel</a>
-
-                  <a href="#fly-hotel" class="navbar-link" data-nav-link> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-luggage" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M6 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
-                    <path d="M9 6v-1a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1" />
-                    <path d="M6 10h12" />
-                    <path d="M6 16h12" />
-                    <path d="M9 20v1" />
-                    <path d="M15 20v1" />
-                  </svg> Flight & Hotel</a>
-
-                  <a href="#places" class="navbar-link" data-nav-link>      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-arch" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M3 21l18 0" />
-                    <path d="M4 21v-15a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v15" />
-                    <path d="M9 21v-8a3 3 0 0 1 6 0v8" />
-                  </svg> Go places</a>
-
-                  <a href="#food" class="navbar-link" data-nav-link>      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
-                  </svg>  Eat food</a>
-                </li>
-              </ul>
-
-            </nav>
-              
           </div>
+        </section>
+      </article>
+
+      <!-- Create a div element that will contain the payment page -->
+      <div class="payment-page">
+        <!-- Create a h1 element that will display the title of the page -->
+        <h1>Payment</h1>
+        <!-- Create a form element that will contain the input fields and buttons -->
+        <form>
+        <!-- Create a fieldset element that will group the input fields for the payment method -->
+        <fieldset>
+          <!-- Create a legend element that will display the title of the fieldset -->
+          <legend>Choose your payment method</legend>
+          <!-- Create four input elements that will allow the user to choose their payment method -->
+          <!-- Each input element has a type of radio, a name of payment-method, a unique id, and a value -->
+          <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+          <!-- Create a label element that will display the label for the credit card input -->
+          <label for="credit-card">Credit card</label>
+          <input type="radio" id="debit-card" name="payment-method" value="debit-card">
+          <!-- Create a label element that will display the label for the debit card input -->
+          <label for="debit-card">Debit card</label>
+          <input type="radio" id="paypal" name="payment-method" value="paypal">
+          <!-- Create a label element that will display the label for the paypal input -->
+          <label for="paypal">PayPal</label>
+          <input type="radio" id="crypto-token" name="payment-method" value="crypto-token" checked>
+          <!-- Create a label element that will display the label for the crypto token input -->
+          <label for="crypto-token">Crypto token</label>
+        </fieldset>
+        <!-- Create a fieldset element that will group the input fields for the card details -->
+        <fieldset>
+          <!-- Create a legend element that will display the title of the fieldset -->
+          <legend>Enter your card details</legend>
+          <!-- Create a label element that will display the label for the card number input -->
+          <label for="card-number">Card number</label>
+          <!-- Create an input element that will allow the user to enter their card number -->
+          <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+          <!-- Create a label element that will display the label for the card holder name input -->
+          <label for="card-holder-name">Card holder name</label>
+          <!-- Create an input element that will allow the user to enter their card holder name -->
+          <input type="text" id="card-holder-name" name="card-holder-name" placeholder="Enter your card holder name" required>
+          <!-- Create a div element that will contain two input fields for the expiry date and CVV code -->
+          <div class="card-info">
+          <!-- Create a label element that will display the label for the expiry date input -->
+          <label for="expiry-date">Expiry date</label>
+          <!-- Create an input element that will allow the user to enter their expiry date -->
+          <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+          <!-- Create a label element that will display the label for the CVV code input -->
+          <label for="cvv-code">CVV code</label>
+          <!-- Create an input element that will allow the user to enter their CVV code -->
+          <input type="text" id="cvv-code" name="cvv-code" placeholder="Enter your CVV code" required>
+          </div>
+        </fieldset>
+        <!-- Create a button element that will allow the user to confirm their payment -->
+        <button class="confirm-payment-button">Confirm payment</button>
+        </form>
+      </div>
+
+      <!-- Create a div element that will contain the crypto payment card or button -->
+      <div class="crypto-payment-card-button">
+        <!-- Create a div element that will display the item information -->
+        <div class="item-info">
+        <!-- Create a span element that will display the item name -->
+        <span class="item-name">Flight fare</span>
+        <!-- Create a span element that will display the item price and currency -->
+        <span class="item-price">$550.75 USD</span>
         </div>
-
-      </header>
-
-      <main>
-        <article>
-          <!-- #hero -->
-          <section class="hero" id="home">
-            <div class="container">
-              <h2 class="h1 hero-title">Plan your trips on web3</h2>
-              <p class="hero-text">
-                Travel        
-                Eat      
-                Sleep
-              </p>
-              <p class="hero-underline">
-                with Dapp To Go
-              </p>
-              </br></br>
-              <div class="btn-group">
-                <button class="btn btn-primary">Learn more</button>
-                <!-- <button class="btn btn-secondary">Book a trip</button> -->
-              </div>
-
-            </div>
-          </section>
-        </article>
-
-        <!-- Create a div element that will contain the payment page -->
-        <div class="payment-page">
-            <!-- Create a h1 element that will display the title of the page -->
-            <h1>Payment</h1>
-            <!-- Create a form element that will contain the input fields and buttons -->
-            <form>
-            <!-- Create a fieldset element that will group the input fields for the payment method -->
-            <fieldset>
-                <!-- Create a legend element that will display the title of the fieldset -->
-                <legend>Choose your payment method</legend>
-                <!-- Create four input elements that will allow the user to choose their payment method -->
-                <!-- Each input element has a type of radio, a name of payment-method, a unique id, and a value -->
-                <input type="radio" id="credit-card" name="payment-method" value="credit-card">
-                <!-- Create a label element that will display the label for the credit card input -->
-                <label for="credit-card">Credit card</label>
-                <input type="radio" id="debit-card" name="payment-method" value="debit-card">
-                <!-- Create a label element that will display the label for the debit card input -->
-                <label for="debit-card">Debit card</label>
-                <input type="radio" id="paypal" name="payment-method" value="paypal">
-                <!-- Create a label element that will display the label for the paypal input -->
-                <label for="paypal">PayPal</label>
-                <input type="radio" id="crypto-token" name="payment-method" value="crypto-token" checked>
-                <!-- Create a label element that will display the label for the crypto token input -->
-                <label for="crypto-token">Crypto token</label>
-            </fieldset>
-            <!-- Create a fieldset element that will group the input fields for the card details -->
-            <fieldset>
-                <!-- Create a legend element that will display the title of the fieldset -->
-                <legend>Enter your card details</legend>
-                <!-- Create a label element that will display the label for the card number input -->
-                <label for="card-number">Card number</label>
-                <!-- Create an input element that will allow the user to enter their card number -->
-                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
-                <!-- Create a label element that will display the label for the card holder name input -->
-                <label for="card-holder-name">Card holder name</label>
-                <!-- Create an input element that will allow the user to enter their card holder name -->
-                <input type="text" id="card-holder-name" name="card-holder-name" placeholder="Enter your card holder name" required>
-                <!-- Create a div element that will contain two input fields for the expiry date and CVV code -->
-                <div class="card-info">
-                <!-- Create a label element that will display the label for the expiry date input -->
-                <label for="expiry-date">Expiry date</label>
-                <!-- Create an input element that will allow the user to enter their expiry date -->
-                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
-                <!-- Create a label element that will display the label for the CVV code input -->
-                <label for="cvv-code">CVV code</label>
-                <!-- Create an input element that will allow the user to enter their CVV code -->
-                <input type="text" id="cvv-code" name="cvv-code" placeholder="Enter your CVV code" required>
-                </div>
-            </fieldset>
-            <!-- Create a button element that will allow the user to confirm their payment -->
-            <button class="confirm-payment-button">Confirm payment</button>
-            </form>
+        <!-- Create a div element that will display the crypto payment options -->
+        <div class="crypto-payment-options">
+        <!-- Create a span element that will display the label for the crypto payment options -->
+        <span class="crypto-payment-label">Pay with crypto:</span>
+        <!-- Create four button elements that will allow the user to choose their preferred crypto currency -->
+        <!-- Each button element has a type of button, a name of crypto-currency, a unique id, and a value -->
+        <button type="button" name="crypto-currency" value="bitcoin" id="buyButton" onclick="sendTransaction(createTransaction())">Bitcoin</button>
+        <button type="button" id="ethereum" name="crypto-currency" value="ethereum">Ethereum</button>
+        <button type="button" id="chainlink" name="crypto-currency" value="chainlink">Chainlink</button>
+        <button type="button" id="cardano" name="crypto-currency" value="cardano">Cardano</button>
         </div>
+      </div>
+      <p class="buyStatus"><span id="buyStatus">Thanks for flying with Dapp To Go</span></p><br>
+      <p class="wallet-address">Wallet address - <span id="wallet-address"></span></p><br>
+      <p class="current-count">Ticket Count - <span id="current-count">0</span></p><br>
+      <button class="sendButton" id="increase-count" onclick="increase-count">Buy Ticket</button>
 
-        <!-- Create a div element that will contain the crypto payment card or button -->
-        <div class="crypto-payment-card-button">
-            <!-- Create a div element that will display the item information -->
-            <div class="item-info">
-            <!-- Create a span element that will display the item name -->
-            <span class="item-name">Flight fare</span>
-            <!-- Create a span element that will display the item price and currency -->
-            <span class="item-price">$550.75 USD</span>
-            </div>
-            <!-- Create a div element that will display the crypto payment options -->
-            <div class="crypto-payment-options">
-            <!-- Create a span element that will display the label for the crypto payment options -->
-            <span class="crypto-payment-label">Pay with crypto:</span>
-            <!-- Create four button elements that will allow the user to choose their preferred crypto currency -->
-            <!-- Each button element has a type of button, a name of crypto-currency, a unique id, and a value -->
-            <button type="button" id="bitcoin" name="crypto-currency" value="bitcoin">Bitcoin</button>
-            <button type="button" id="ethereum" name="crypto-currency" value="ethereum">Ethereum</button>
-            <button type="button" id="chainlink" name="crypto-currency" value="chainlink">Chainlink</button>
-            <button type="button" id="cardano" name="crypto-currency" value="cardano">Cardano</button>
-            </div>
-        </div>
-  
+    </main>
 
-      </main>
-
-      <!-- custom javascript -->
-      <script src="script.js">
-
-      </script>
-
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- custom javascript -->
+    <script src="script.js"></script>
+    <script src="index.js"></script>
 
   </body>
 
